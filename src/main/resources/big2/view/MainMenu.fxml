@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="big2.controller.MainMenuController">
+   <children>
+      <SplitPane layoutY="404.0" orientation="VERTICAL" prefHeight="17.0" prefWidth="750.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <AnchorPane layoutX="30.0" layoutY="153.0" minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="15.0" />
+      <Button alignment="CENTER" layoutX="316.0" layoutY="479.0" mnemonicParsing="false" onAction="#ruleButton" prefHeight="25.0" prefWidth="118.0" text="View Rules" textAlignment="CENTER" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="316.0" />
+      <Label alignment="CENTER" layoutX="279.0" layoutY="14.0" text="P4 Big 2 Game" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="109.0" layoutY="199.0" AnchorPane.leftAnchor="100.0">
+         <children>
+            <Label text="Host" />
+            <TextField fx:id="hostText" promptText="Enter name...">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#hostButtonClick" text="Host Room">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="483.0" layoutY="182.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <Label text="Player" />
+            <TextField fx:id="playerText" prefHeight="25.0" prefWidth="149.0" promptText="Enter name...">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="hostIPText" promptText="Enter IP address of host">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#playerButtonClick" text="Request to join room">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Separator layoutX="391.0" layoutY="71.0" orientation="VERTICAL" prefHeight="333.0" prefWidth="19.0" AnchorPane.leftAnchor="391.0" AnchorPane.rightAnchor="390.0" />
+   </children>
+</AnchorPane>
